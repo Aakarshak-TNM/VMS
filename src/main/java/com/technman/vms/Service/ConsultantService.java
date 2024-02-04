@@ -17,7 +17,7 @@ public class ConsultantService {
         return consultantRepository.findAll();
     }
 
-    public Consultant post(Consultant consultant) {
-        return consultantRepository.save(consultant);
+    public void post(Consultant consultant) {
+        consultantRepository.save(consultant);
     }
 }
